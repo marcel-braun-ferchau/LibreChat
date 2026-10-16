@@ -1,0 +1,81 @@
+:root {
+  --brand-red: 190 0 0;
+  --brand-red-hover: 115 0 0;
+  --primary: 0 100% 37%;
+  --primary-foreground: 0 0% 100%;
+  --ring: 0 100% 37%;
+}
+
+html:not(.high-contrast) {
+  --accent-primary: var(--brand-red) !important;
+  --accent-primary-hover: var(--brand-red-hover) !important;
+  --header-primary: 241 241 241 !important;
+  --header-hover: 231 231 231 !important;
+  --header-button-hover: 231 231 231 !important;
+  --surface-active: 232 232 232 !important;
+  --surface-active-alt: 222 222 222 !important;
+  --surface-hover: 227 227 227 !important;
+  --surface-hover-alt: 215 215 215 !important;
+  --surface-primary: 248 248 248 !important;
+  --surface-primary-alt: 241 241 241 !important;
+  --surface-primary-contrast: 232 232 232 !important;
+  --surface-secondary: 241 241 241 !important;
+  --surface-secondary-alt: 229 229 229 !important;
+  --surface-tertiary: 232 232 232 !important;
+  --surface-tertiary-alt: 245 245 245 !important;
+  --surface-dialog: 248 248 248 !important;
+  --surface-chat: 245 245 245 !important;
+  --surface-submit: var(--brand-red) !important;
+  --surface-submit-hover: var(--brand-red-hover) !important;
+  --surface-destructive: var(--brand-red) !important;
+  --surface-destructive-hover: var(--brand-red-hover) !important;
+  --border-light: 225 225 225 !important;
+  --border-medium-alt: 204 204 204 !important;
+  --border-medium: 204 204 204 !important;
+}
+
+.dark:not(.high-contrast) {
+  --primary: 0 100% 37%;
+  --primary-foreground: 0 0% 100%;
+  --ring: 0 100% 60%;
+  --header-primary: 48 48 48 !important;
+  --header-hover: 59 59 59 !important;
+  --header-button-hover: 48 48 48 !important;
+  --surface-primary: 23 23 23 !important;
+  --surface-primary-alt: 32 32 32 !important;
+  --surface-primary-contrast: 37 37 37 !important;
+  --surface-secondary: 34 34 34 !important;
+  --surface-secondary-alt: 41 41 41 !important;
+  --surface-tertiary: 48 48 48 !important;
+  --surface-tertiary-alt: 48 48 48 !important;
+  --surface-dialog: 28 28 28 !important;
+  --surface-chat: 48 48 48 !important;
+  --surface-submit: var(--brand-red) !important;
+  --surface-submit-hover: var(--brand-red-hover) !important;
+  --surface-destructive: var(--brand-red) !important;
+  --surface-destructive-hover: var(--brand-red-hover) !important;
+  --border-light: 48 48 48 !important;
+  --border-medium-alt: 66 66 66 !important;
+  --border-medium: 66 66 66 !important;
+}
+
+button.btn-primary,
+a.btn-primary,
+button[class*='bg-green-'],
+[role='button'][class*='bg-green-'] {
+  background-color: rgb(var(--brand-red)) !important;
+  border-color: rgb(var(--brand-red)) !important;
+}
+
+button.btn-primary:hover,
+a.btn-primary:hover,
+button[class*='hover:bg-green-']:hover,
+[role='button'][class*='hover:bg-green-']:hover {
+  background-color: rgb(var(--brand-red-hover)) !important;
+  border-color: rgb(var(--brand-red-hover)) !important;
+}
+
+button.btn-primary:focus-visible,
+button[class*='focus:border-green-']:focus-visible {
+  outline-color: rgb(var(--brand-red)) !important;
+}
